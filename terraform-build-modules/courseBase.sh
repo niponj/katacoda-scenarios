@@ -12,7 +12,7 @@ cd ~/learn-terraform-modules
 # docker-compose up -d
 
 # Install localstack (don't run dockerfile on katacoda)
-pip3 install localstack awscli
+pip3 install localstack awscli --ignore-installed PyYAML
 localstack start &>localstack-output.log &
 
 # Prevent `yes` command from accidentally being run
