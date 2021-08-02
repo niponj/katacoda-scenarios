@@ -18,6 +18,5 @@ to build real infrastructure, which will require you to authenticate with AWS.
 - The `module "vpc"` block defines a Virtual Private Cloud (VPC), which will provide networking services for the rest of your infrastructure.
 - The `module "ec2_instances"` block defines two EC2 instances within your VPC.
 
-You can also test the localStack by running this command to verify the S3 API service.
-`export AWS_ACCESS_KEY_ID=test AWS_SECRET_ACCESS_KEY=test`{{execute T2}}
-`aws --endpoint-url=http://localhost:4566 s3api list-buckets`{{execute T2}}
+You can validate the localStack service by running this command.
+`aws --endpoint-url=http://localhost:4566 s3api list-buckets`{{execute T1}}
