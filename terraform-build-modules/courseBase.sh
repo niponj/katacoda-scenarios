@@ -13,7 +13,7 @@ cd ~/learn-terraform-modules
 
 # Install localstack (don't run dockerfile on katacoda)
 pip3 install localstack awscli --ignore-installed PyYAML
-localstack start &>localstack-output.log &
+localstack start &>/root/localstack-output.log &
 
 # Prevent `yes` command from accidentally being run
 alias yes=""
