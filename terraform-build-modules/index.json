@@ -1,5 +1,5 @@
 {
-  "title": "Build a Module",
+  "title": "Terraform Modules",
   "description": "Write a local module to create an Amazon S3 bucket hosting a static website. Create a module directory, write the module configuration, variables, and outputs, and call the module from a root configuration.",
   "time": "30 minutes",
   "icon": "fa-terraform",
