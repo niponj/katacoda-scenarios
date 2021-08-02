@@ -1,4 +1,4 @@
-# Build a Module
+# Build a Terraform Module
 
 This Katacoda scenario is meant to serve as a companion piece for the 
 [Build a Module](https://learn.hashicorp.com/tutorials/terraform/module-use?in=terraform/modules)
