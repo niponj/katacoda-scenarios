@@ -1,0 +1,96 @@
+{
+  "title": "Terraform 101",
+  "description": "Terraform basics (with docker nginx)",
+  "difficulty": "beginner",
+  "time": "20 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Terraform install",
+        "text": "install.md"
+      },
+      {
+        "title": "Terraform Projects",
+        "text": "project.md",
+        "code": "setup.sh"
+      },
+      {
+        "title": "Terraform Providers",
+        "text": "provider.md"
+      },
+      {
+        "title": "Terraform Config",
+        "text": "config.md"
+      },
+      {
+        "title": "Terraform Init",
+        "text": "init.md"
+      },
+      {
+        "title": "Variables",
+        "text": "variables.md"
+      },
+      {
+        "title": "Validate and Plan",
+        "text": "plan.md"
+      },
+      {
+        "title": "Terraform Apply",
+        "text": "apply.md"
+      },
+      {
+        "title": "Inspect Infrastructure",
+        "text": "inspect.md"
+      },
+      {
+        "title": "State file",
+        "text": "statefile.md"
+      },
+      {
+        "title": "Graph",
+        "text": "graph.md"
+      },
+      {
+        "title": "Update Infrastructure",
+        "text": "update.md"
+      },
+      {
+        "title": "Destroy Infrastructure",
+        "text": "destroy.md"
+      },
+      {
+        "title": "Modules",
+        "text": "modules.md"
+      },
+      {
+        "title": "Quiz",
+        "text": "quiz.md"
+      }
+    ],
+    "assets": {
+        "host01": [
+            {"file": "index.html", "target": "/home/scrapbook/tutorial/www/", "chmod": "+r"}
+        ]
+    },
+    "intro": {
+      "text": "intro.md",
+      "courseData": "background.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "files": [
+    "nginx/main.tf", "nginx/variables.tf", "nginx/dev.tfvars"
+  ],
+  "environment": {
+    "uilayout": "editor-terminal",
+    "showdashboard": true,
+    "dashboards": [{"name": "nginx32768", "port": 32768},
+      {"name": "nginx", "href": "https://[[HOST_SUBDOMAIN]]-32768-[[KATACODA_HOST]].environments.katacoda.com"}]
+  },
+  "backend": {
+    "imageid": "ubuntu",
+    "port": 32768
+  }
+}
