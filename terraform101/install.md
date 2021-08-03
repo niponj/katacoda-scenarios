@@ -1,17 +1,17 @@
 
-Terraform เขียนด้วยภาษา Go และมี CLI binary ที่ใช้งาน และติดตั้งได้ง่าย วิธีการติดตั้งจะแตกต่างกันแล้วแต่ระบบ OS ซึ่งใน course นี้จะใช้การติดตั้งสำหรับ Ubuntu Linux โดยผู้เรียนสามารถดูขั้นตอนการติดตั้งได้ที่
+Terraform เขียนด้วยภาษา Go และมี CLI binary ให้ใช้งาน ติดตั้งได้ง่าย โดยวิธีการติดตั้งจะแตกต่างกันแล้วแต่ระบบ OS ซึ่งใน course นี้จะใช้การติดตั้งสำหรับ Ubuntu Linux โดยผู้เรียนสามารถดูขั้นตอนการติดตั้งได้ที่
 https://www.terraform.io/downloads.html
 
-## ขั้นตอนที่ 1. เริ่มต้นติดตั้ง Terraform
-Download linux platform zip, unzip, move to /usr/local/bin
+## เริ่มต้นติดตั้ง Terraform
+ทำการ download linux platform zip, unzip, แล้วย้าย files ไปที่ /usr/local/bin
 
 `curl https://releases.hashicorp.com/terraform/0.12.5/terraform_0.12.5_linux_amd64.zip -O; unzip terraform_0.12.5_linux_amd64.zip; rm terraform_0.12.5_linux_amd64.zip; sudo mv terraform /usr/local/bin`{{execute}}
 
-## confirm version
+## ตรวจสอบ version ที่ติดตั้ง
 `terraform version`{{execute}}
 <pre>Terraform v0.12.5</pre>
 
-## terraform usage
+## เช็คการใช้งาน โดยสั่งรัน
 `terraform `{{execute}}
 
 The most common cammands are plan and apply, but there a variety of commands to 
