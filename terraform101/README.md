@@ -2,3 +2,5 @@
 Terraform 101 - Playing with Local Docker service
 
 Folked from - https://github.com/bhood4/katacoda-scenarios/tree/master/tf101
+
+แก้ไขเนื้อหาเป็นภาษาไทย เพื่อให้ผู้สนใจเข้าใจได้ง่าย
