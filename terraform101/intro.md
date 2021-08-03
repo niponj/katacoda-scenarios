@@ -1,6 +1,6 @@
-In this scenario, you will learn the basics about Terraform from Hashicorp.
+ใน course เริ่มต้นนี้ เราจะเรียนรู้วิธีการทำงานพื้นฐานของ Hashicorp Terraform กัน
 
-It will provide an overview of Terraform and explain the essential aspects, including how to install and use it.
+โดยใน Lab จะมีการเกรินนำ ทำความรู้จักส่วนสำคัญต่างๆ ของ Terraform ที่จำเป็นต้องรู้ รวมถึงวิธีการติดตั้งอย่างง่าย แต่ใช้งาน commands ที่สำคัญ
 
 What is Terraform?
 
