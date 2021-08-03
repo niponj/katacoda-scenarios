@@ -4,7 +4,7 @@
 
 อะไรคือ Terraform
 
-* เป็นเครื่องมือ Infrastrure-As-Code หรือย่อว่า Iac ที่ใช้การติดต่อกับ APIs ไปยังบริการต่างๆ จากผู้ให้บริการ (Providers) เช่น Amazon AWS เพื่อใช้ในการจัดสรรร (Provisioning) และการจัดการระบบโครงสร้าง (Infrastructure Managemetn)
+* เป็นเครื่องมือ Infrastrure-As-Code หรือย่อว่า Iac ที่ใช้การติดต่อโดยใช้ APIs ติดต่อไปยังบริการต่างๆ ของผู้ให้บริการ (Providers) เช่น Amazon AWS เพื่อใช้ในการจัดสรรร (Provisioning) และการจัดการระบบโครงสร้าง (Infrastructure Management) เช่น สร้างเครื่อง Servers สำหรับให้บริการ Web Applications โดยใช้ EC2 เป็นต้น
 * An Infrastructure-As-Code (IaC) tool which leverages APIs provided by multiple service providers in order to provision and manage infrastructure
 * ใช้รูปแบบการเขียนโดยไม่เจาะจงวิธีการ (Declarative) - โดยผู้ใช้ จะเขียน templates ต่างๆ เพื่อธิบายผลลัพธ์ที่ต้องการให้เกิดขึ้น (Desired end-state) แล้วให้ Terraform ทำการหาวิธ๊ในการทำให้เกิดผลลัพธ์นั้นเอง
 * ใช้รูปแบบในการเขียนที่เป็นภาษาอย่างง่าย แต่มีศักยภาพ โดยใช้ HCL ซึ่งย่อมาจาก Hashicorp Configuration Languages
