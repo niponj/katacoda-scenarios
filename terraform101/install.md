@@ -14,8 +14,8 @@ https://www.terraform.io/downloads.html
 ## เช็คการใช้งาน โดยสั่งรัน
 `terraform `{{execute}}
 
-The most common cammands are plan and apply, but there a variety of commands to 
-format, validate, refresh, and graph terraform config as well as tools to manage state and environment.
-There is also support for an interactive console for Terraform interpolations.
+การสั่งการ จะทำผ่าน commands ที่ใช้บ่อย ได้แก่ plan และ apply แต่ยังมี commands อีกหลายตัวที่เลือกใช้ได้
+เช่น format, validate, refresh และ graph รวมถึง config เพื่อใช้จัดการ state และ environment ด้วย
+นอกจากนี้ ยังมี interactive console ให้เข้าไปใช้ หรือทดสอบการทำ interpolations เช่น การเอาค่าตัวแปร ${var.foo} ไปแปะไว้ในคำสั่ง
 
-You can find more about terraform on the official Hashicorp Terraform site at [https://www.terraform.io/](https://www.terraform.io)
+ข้อมูลเพิ่มเติมสำหรับ Terraform พบได้ที่ [https://www.terraform.io/](https://www.terraform.io)
