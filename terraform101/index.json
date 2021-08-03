@@ -6,64 +6,64 @@
   "details": {
     "steps": [
       {
-        "title": "Terraform install",
+        "title": "1. Installation",
         "text": "install.md"
       },
       {
-        "title": "Terraform Projects",
+        "title": "2. Projects",
         "text": "project.md",
         "code": "setup.sh"
       },
       {
-        "title": "Terraform Providers",
+        "title": "3. Providers",
         "text": "provider.md"
       },
       {
-        "title": "Terraform Config",
+        "title": "4. Terraform Config",
         "text": "config.md"
       },
       {
-        "title": "Terraform Init",
+        "title": "5. Terraform Init",
         "text": "init.md"
       },
       {
-        "title": "Variables",
+        "title": "6. Variables",
         "text": "variables.md"
       },
       {
-        "title": "Validate and Plan",
+        "title": "7. Terraform Validate and Plan",
         "text": "plan.md"
       },
       {
-        "title": "Terraform Apply",
+        "title": "8. Terraform Apply",
         "text": "apply.md"
       },
       {
-        "title": "Inspect Infrastructure",
+        "title": "9. Inspect Infrastructure",
         "text": "inspect.md"
       },
       {
-        "title": "State file",
+        "title": "10. State file",
         "text": "statefile.md"
       },
       {
-        "title": "Graph",
+        "title": "11. Terraform Graph",
         "text": "graph.md"
       },
       {
-        "title": "Update Infrastructure",
+        "title": "12. Update Infrastructure",
         "text": "update.md"
       },
       {
-        "title": "Destroy Infrastructure",
+        "title": "13. Terraform Destroy",
         "text": "destroy.md"
       },
       {
-        "title": "Modules",
+        "title": "14. Modules",
         "text": "modules.md"
       },
       {
-        "title": "Quiz",
+        "title": "15. Quiz",
         "text": "quiz.md"
       }
     ],
