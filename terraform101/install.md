@@ -14,6 +14,7 @@ https://www.terraform.io/downloads.html
 ## เช็คการใช้งาน โดยสั่งรัน
 `terraform `{{execute}}
 
+จะปรากฎคำสั่งต่างๆ และข้อแนะนำการใช้งาน (Usage)
 การสั่งการ จะทำผ่าน commands ที่ใช้บ่อย ได้แก่ plan และ apply แต่ยังมี commands อีกหลายตัวที่เลือกใช้ได้
 เช่น format, validate, refresh และ graph รวมถึง config เพื่อใช้จัดการ state และ environment ด้วย
 นอกจากนี้ ยังมี interactive console ให้เข้าไปใช้ หรือทดสอบการทำ interpolations เช่น การเอาค่าตัวแปร ${var.foo} ไปแปะไว้ในคำสั่ง
