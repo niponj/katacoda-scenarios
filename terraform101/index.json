@@ -1,6 +1,6 @@
 {
-  "title": "เรียนรู้เริ่มต้น สำหรับ Terraform",
-  "description": "Terraform basics (with docker nginx)",
+  "title": "เรียนรู้เริ่มต้นกับ Terraform",
+  "description": "พื้นฐาน Terraform กับการใช้งาน commands เบื้องต้น ด้วยการติดตั้ง Nginx บน Docker",
   "difficulty": "beginner",
   "time": "20 minutes",
   "details": {
