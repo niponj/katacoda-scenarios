@@ -19,3 +19,5 @@ https://www.terraform.io/downloads.html
 นอกจากนี้ ยังมี interactive console ให้เข้าไปใช้ หรือทดสอบการทำ interpolations เช่น การเอาค่าตัวแปร ${var.foo} ไปแปะไว้ในคำสั่ง
 
 ข้อมูลเพิ่มเติมสำหรับ Terraform พบได้ที่ [https://www.terraform.io/](https://www.terraform.io)
+ตัวอย่างการทำ interpolations
+https://searchitoperations.techtarget.com/tutorial/Walk-through-common-use-cases-for-built-in-Terraform-functions
