@@ -1,8 +1,10 @@
+
+
 Terraform works based on configuration files, in this case main.tf. The configuration is a declarative expression of the desired state of your infrastructure. Terraform commands uses all files in the directory that have a .tf extension as configuration input.
 
 The config files use a simple, powerful [HCL templating language](https://www.terraform.io/docs/configuration/syntax.html)
 
-A resource is a components of your infrastructure associated with a provider. For example a container or image resource from the docker provider is used to manage real containers and images.
+A resource is a component of your infrastructure associated with a provider. For example a container or image resource from the docker provider is used to manage real containers and images.
 
 We can now start defining the resources of our infrastructure. The first resource is our Docker image. A resource has two parameters, one is a TYPE and second a NAME. The type is docker_image and the name is nginx. Within the block we define the name and tag of the Docker Image.
 
