@@ -29,3 +29,5 @@ In addition to .tf configuration files, other files in the directory include:
 </pre>
 
 จากตัวอย่าง ไฟล์และไดเร็กทอรี่ ใน lab ได้ทำการสร้าง ngix directory สำหรับใช้เป็น project ตัวอย่าง และให้คุณได้เริ่มทดลองได้จากไดเร็กทอรีนั้นแล้ว
+<pro> c:\
+</pre>
