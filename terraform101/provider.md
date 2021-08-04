@@ -1,18 +1,20 @@
 
+* Provider คือ ตัวแทนของการเรียกใช้ มีโครงสร้างเป็นโมดุล (modular) ที่ใช้แทน IaaS, SaaS และ PaaS ของแต่ละบริษัท เช่น AWS โดยมีประโยชน์เพื่อใช้การนำบริการต่างๆ มาประกอบใน project
 
-* A provider is an abstract and modular approach for IaaS, SaaS and PaaS vendor integrations
+* โดย Provider จะมีส่วนกอบจากส่วนย่อยที่เรียกใช้ APIs และ ทรัพยากร (resources) ต่างๆ ที่เอาเข้ามารวมกัน (packaged)
 
 * Each integration is packaged as a provider, which understands the vendor’s APIs and exposes specific resources
+*
+* ตัวอย่างของ providers ได้แก่ docker (ซึ่งใน lab นี้จะให้ทดลอง), azurerm, aws, vmware, datadog
 
-* Example providers include docker, azurerm, aws, vmware, datadog
+* ใน project ใดๆ สามารถอ้างอิงถึง providers มากกว่าหนึ่งตัวได้
 
-* Multiple providers can be referenced in the same project
+* ทั้งนี้ จะมี provider มาตรฐาน และ providers ที่สร้างขึ้นเอง (thirdparty custom provider) อยู่มากมายให้เลือกใช้ ดังนี้
+* [standard providers](https://www.terraform.io/docs/providers/index.html)
 
-* There are many [standard providers](https://www.terraform.io/docs/providers/index.html), as well as a large number of thirdparty custom providers
+Providers จะถูกใส่ไว้ใน terraform config ซึ่งอยู่ในไฟล์ที่มีนามสกุล .tf ซึ่งจะมีการกำหนดค่า API endpoint, credentials ซึ่งเป็นรหัสสำหรับเข้าถึงบริการ, debug setting และค่าพารามิเตอร์อื่นๆ เพื่อใช้งาน API นั้นห
 
-Providers are configured in terraform config files with a .tf extension, which typically include configuraiton of the API endpoint, credentials, debug settings, and other global parameters for a specific API integration.
-
-This config file defines a docker provider with the host where we want to apply our configuration
+ในกรณีของ lab ที่เราจะทำ จะกำหนดค่า config file โดยใส่ provider ชื่อ docker พร้อมกับระบบ host ซึ่งก็จะมาใช้เครื่องใน lab ของเรานั่นเอง
 
 <pre class="file" data-filename="main.tf" data-target="replace">provider "docker" {
   host = "unix:///var/run/docker.sock"
@@ -20,8 +22,5 @@ This config file defines a docker provider with the host where we want to apply 
 
 </pre>
 
-Multiple providers can be referenced in the same project.
-
-Also, multiple instances of a single provider can be used with "alias", for instance with multiple docker hosts or aws regions.
-
-For more info, see [Provider documentation](https://www.terraform.io/docs/configuration/providers.html)
+นอกจากใน project ใดๆ ที่ทำ จะใช้ providers มากว่าหนึ่งได้ (เช่น aws + azurerm) ถ้าเราอยากเอา provider ใดๆ แต่ให้มีหลายแบบ (instances) ก็ทำได้เช่นกัน โดยการกำหนด "alias" ของแต่ละ instance นั้น ทำให้สามารถใช้งาน เช่น สร้าง docker host หลายตัว หรือมี aws หลาย regions ได้
+[Provider documentation](https://www.terraform.io/docs/configuration/providers.html)
