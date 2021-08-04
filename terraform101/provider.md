@@ -3,7 +3,7 @@
 
 * โดย Provider จะมีส่วนกอบจากส่วนย่อยที่เรียกใช้ APIs และ ทรัพยากร (resources) ต่างๆ ที่เอาเข้ามารวมกัน (packaged)
 
-* ตัวอย่างของ providers ได้แก่ docker (ใช้ใน lab นี้), azurerm, aws, vmware, datadog
+* ตัวอย่างของ providers ได้แก่ aws, azurerm, vmware, datadog และ docker ที่ถูกใช้ใน lab นี้
 
 * ใน project ใดๆ สามารถอ้างอิงถึง providers มากกว่าหนึ่งตัวได้
 
