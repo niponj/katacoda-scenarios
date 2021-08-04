@@ -8,7 +8,7 @@
 * ใน project ใดๆ สามารถอ้างอิงถึง providers มากกว่าหนึ่งตัวได้
 
 * ทั้งนี้ จะมี provider มาตรฐาน และ providers ที่สร้างขึ้นเอง (thirdparty custom provider) อยู่มากมายให้เลือกใช้ ดังนี้
-* [standard providers](https://www.terraform.io/docs/providers/index.html)
+[standard providers](https://www.terraform.io/docs/providers/index.html)
 
 Providers จะถูกใส่ไว้ใน terraform config ซึ่งอยู่ในไฟล์ที่มีนามสกุล .tf ซึ่งจะมีการกำหนดค่า API endpoint, credentials ซึ่งเป็นรหัสสำหรับเข้าถึงบริการ, debug setting และค่าพารามิเตอร์อื่นๆ เพื่อใช้งาน API นั้นห
 
