@@ -3,8 +3,6 @@
 
 * โดย Provider จะมีส่วนกอบจากส่วนย่อยที่เรียกใช้ APIs และ ทรัพยากร (resources) ต่างๆ ที่เอาเข้ามารวมกัน (packaged)
 
-* Each integration is packaged as a provider, which understands the vendor’s APIs and exposes specific resources
-*
 * ตัวอย่างของ providers ได้แก่ docker (ซึ่งใน lab นี้จะให้ทดลอง), azurerm, aws, vmware, datadog
 
 * ใน project ใดๆ สามารถอ้างอิงถึง providers มากกว่าหนึ่งตัวได้
