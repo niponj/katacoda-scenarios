@@ -1,8 +1,12 @@
-
+Terraform ทำงานโดยใช้ configuration file ซึ่งส่วนหลักจะเป็น main.tf โดย configuation นี้ทำงานในรูปแบบไม่เจาะจงวิธีการ (declarative)โดยเขียนเพื่อสร้างผลลัพธ์ที่ต้องการให้เกิดขึ้น (desired state) บน infrastructure ที่กำหนด เช่น AWS cloud โดยคำสั่งทั้งหมดจะใส่ไว้ในไฟล์และไดเรกทรอรี่ที่มีนามสกุล .tf เพื่อใช้สร้าง configuration สำหรับป้อนเข้า terraform.
 
 Terraform works based on configuration files, in this case main.tf. The configuration is a declarative expression of the desired state of your infrastructure. Terraform commands uses all files in the directory that have a .tf extension as configuration input.
 
+Config file ใช้โครงสร้างแบบง่าย แต่มีศักยภาพ ในรูปแบบ [HCL templating language](https://www.terraform.io/docs/configuration/syntax.html)
+
 The config files use a simple, powerful [HCL templating language](https://www.terraform.io/docs/configuration/syntax.html)
+
+Resource คือองค์ประกอบของ infrastructure 
 
 A resource is a component of your infrastructure associated with a provider. For example a container or image resource from the docker provider is used to manage real containers and images.
 
