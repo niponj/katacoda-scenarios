@@ -8,7 +8,8 @@ Variables คือตัวแปรที่ใช้เป็นอินพ�
 }
 </pre>
 
-* resources can access variable values in HCL:
-<pre>count = "${var.container_countainer_count}"</pre>
+* resource ใช้วิธีดึงตัวเลขนี้จาก variable ข้างบนโดยใช้
+<pre>count = "${var.container_count}"</pre>
 
+* ทั้งนี้ ค่าของ variables ต้องถูกกำหนดไว้ก่อนที่จะมีการใช้งาน (หรือตั้งค่าเริ่มต้นไว้)
 * variables values must be initialised before they are used (or defaulted).
