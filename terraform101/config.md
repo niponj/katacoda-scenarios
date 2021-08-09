@@ -41,15 +41,11 @@ We can define our container resource. The resource type is docker_container and 
 </pre>
 
 
-* ด้วยการใช้ HCL ทำให้เราเขียน Template โดยการแทรกค่าจาก resource อื่นๆ เข้ามาใน config ของเราได้ เช่นกรณีนี้ docker_container resource ของเรา มีการดึงค่าจากข้างบนลงมา ทำให้ image = "${docker_image.nginx.latest}"
-* HCL templating supports "interpolation" of values in other resources, such as the docker_container resource referencing image = "${docker_image.nginx.latest}"
+* ด้วยการใช้ HCL ทำให้เราเขียน Template โดยการแทรกค่าจาก resource อื่นๆ เข้ามาใน config ของเราได้ เช่นกรณีนี้ docker_container resource ของเรา มีการดึงค่าจากข้างบนลงมา สร้างเป็น image = "${docker_image.nginx.latest}"
 
-* Count เป็นการคำนวณเพื่อให้ง่ายในการสร้าง resource หลายๆ ครั้ง โดยตัวอย่างนี้จะนับจำนวน container ด้วยคำสั่ง container_count โดย resources ที่จะทำการนับนี้ จะใช้เงื่อนไข variable แบบ list ซึ่งเป็น element แบบหนึ่งใน HCL
-* Count makes it easy to create multiples of resources - this example runs the container container_count times. Resources with count can be accessed as list elements in HCL "interpolation" 
+* Count เป็นการกำหนตัวเลข เพื่อให้ง่ายในการสร้าง resource หลายๆ ครั้ง โดยตัวอย่างนี้จะใช้เพื่อสร้าง container เป็นจำนวนครั้ง เท่ากับค่าใน container_count
 
-See more information on [HCL functions and interpolation](https://www.terraform.io/docs/configuration-0-11/interpolation.html)
-
-* อ้างอิง
+อ้างอิง
 
 * ทำความรู้จักกับ Docker และ Software Container
 https://medium.com/thothzocial-engineering/%E0%B8%97%E0%B8%B3%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%88%E0%B8%B1%E0%B8%81-docker-%E0%B9%81%E0%B8%A5%E0%B8%B0-software-container-c6338629da11
