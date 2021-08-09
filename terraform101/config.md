@@ -33,7 +33,7 @@ Resource คือองค์ประกอบย่อยของ infrastruc
 
 * ด้วยการใช้ HCL ทำให้เราเขียน Template โดยการแทรกค่าจาก resource อื่นๆ เข้ามาใน config ของเราได้ เช่นกรณีนี้ docker_container resource ของเรา มีการดึงค่าจากข้างบนลงมา สร้างเป็น image = "${docker_image.nginx.latest}"
 
-* Count เป็นการกำหนตัวเลข เพื่อให้ง่ายในการสร้าง resource หลายๆ ครั้ง โดยตัวอย่างนี้จะใช้เพื่อสร้าง container เป็นจำนวนครั้ง เท่ากับค่าใน container_count ที่อยู่ในไฟล์ variables.tf
+* Count เป็นการกำหนดตัวเลข เพื่อให้ง่ายในการสร้าง resource หลายๆ ครั้ง โดยตัวอย่างนี้จะใช้เพื่อสร้าง container เป็นจำนวนครั้ง เท่ากับค่าใน container_count ที่อยู่ในไฟล์ variables.tf
 
 อ้างอิง
 
