@@ -17,9 +17,10 @@ https://www.terraform.io/downloads.html
 จะปรากฎคำสั่งต่างๆ และข้อแนะนำการใช้งาน (Usage)
 การสั่งการ จะทำผ่าน commands ที่ใช้บ่อย ได้แก่ plan และ apply แต่ยังมี commands อีกหลายตัวที่เลือกใช้ได้
 เช่น format, validate, refresh และ graph รวมถึง config เพื่อใช้จัดการ state และ environment ด้วย
-นอกจากนี้ ยังมี interactive console ให้เข้าไปใช้ หรือทดสอบการทำ interpolations เช่น การเอาค่าตัวแปร ${var.foo} ไปแปะไว้ในคำสั่ง
+นอกจากนี้ ยังมี interactive console ให้เข้าไปใช้ หรือทดสอบการทำ Expression เช่น การเอาค่าตัวแปร ${var.foo} ไปแปะไว้ในคำสั่ง
 
 ข้อมูลเพิ่มเติมสำหรับ Terraform พบได้ที่ [https://www.terraform.io/](https://www.terraform.io)
 
-ตัวอย่างการทำ interpolations
-https://searchitoperations.techtarget.com/tutorial/Walk-through-common-use-cases-for-built-in-Terraform-functions
+ตัวอย่างการทำ Expression ที่ใช้งานในตัวอย่าง เรียกว่าการทำ interpolation ดังตัวอย่าง
+https://www.terraform.io/docs/language/expressions/strings.html#string-templates
+
