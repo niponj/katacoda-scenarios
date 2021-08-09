@@ -1,5 +1,5 @@
 
-Variables are inputs to the terraform configuration 
+Variables คือตัวแปรที่ใช้เป็นอินพุต เพื่อป้อนสู่ terraform configuration
 
 <pre class="file" data-filename="variables.tf" data-target="replace">variable "container_count" {
  type = number
