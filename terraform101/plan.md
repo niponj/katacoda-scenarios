@@ -1,5 +1,5 @@
 
-You can check the configuration for errors and validates providers have been correctly initialised. Validate is provider-aware with specific cloud-provider errors.
+ขั้นตอนต่อมา คือการเช็คว่า configuration ที่สร้างมามีความผิดพลาดหรือไม่ พร้อมตรวจทานกับ providers ว่าได้ทำทำ intiataion ครบถ้วน เทียบได้กับการตรวจแกรมม่าภาษาอังกฤษ
 
 `terraform validate`{{execute}}
 
