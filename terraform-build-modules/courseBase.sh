@@ -5,7 +5,7 @@ curl -O https://releases.hashicorp.com/terraform/0.14.6/terraform_0.14.6_linux_a
 unzip terraform_0.14.6_linux_amd64.zip -d /usr/local/bin/
 
 # Clone GitHub repo
-git clone -b localstack https://github.com/hashicorp/learn-terraform-modules
+git clone https://github.com/niponj/sources/terraform-modules
 cd ~/learn-terraform-modules
 
 # Run Docker Compose up (daemon)
