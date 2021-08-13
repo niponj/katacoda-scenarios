@@ -11,14 +11,6 @@
         "verify": "install-verify.sh"
       },
       {
-        "title": "Network",
-        "text": "network.md"
-      },
-      {
-        "title": "Compute",
-        "text": "compute.md"
-      },
-      {
         "title": "Cleanup",
         "text": "cleanup.md"
       }
@@ -31,9 +23,6 @@
       "text": "finish.md"
     }
   },
-  "files": [
-    "terraform-learn/aws/environments/dev/networking/terraform.tfvars",
-    "terraform-learn/aws/environments/dev/compute/terraform.tfvars"
   ],
   "environment": {
     "uilayout": "editor-terminal"
