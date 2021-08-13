@@ -1,0 +1,44 @@
+{
+  "title": "Terraform Playground Latest",
+  "description": "Terraform Playground",
+  "difficulty": "beginner",
+  "time": "45 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Terraform install",
+        "text": "install.md",
+        "verify": "install-verify.sh"
+      },
+      {
+        "title": "Network",
+        "text": "network.md"
+      },
+      {
+        "title": "Compute",
+        "text": "compute.md"
+      },
+      {
+        "title": "Cleanup",
+        "text": "cleanup.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "courseData": "background.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "files": [
+    "terraform-learn/aws/environments/dev/networking/terraform.tfvars",
+    "terraform-learn/aws/environments/dev/compute/terraform.tfvars"
+  ],
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
