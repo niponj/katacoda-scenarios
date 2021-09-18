@@ -1,96 +1,29 @@
 {
-  "title": "Terraform 101",
-  "description": "Terraform basics (with docker nginx)",
-  "difficulty": "beginner",
-  "time": "20 minutes",
+  "title": "Rancher 2 and custom cluster",
+  "description": "Run Rancher, create a custom cluster and add a node to the cluster",
   "details": {
     "steps": [
       {
-        "title": "Terraform install",
-        "text": "install.md"
+        "title": "Step 1",
+        "text": "step1.md"
       },
       {
-        "title": "Terraform Projects",
-        "text": "project.md",
-        "code": "setup.sh"
-      },
-      {
-        "title": "Terraform Providers",
-        "text": "provider.md"
-      },
-      {
-        "title": "Terraform Config",
-        "text": "config.md"
-      },
-      {
-        "title": "Terraform Init",
-        "text": "init.md"
-      },
-      {
-        "title": "Variables",
-        "text": "variables.md"
-      },
-      {
-        "title": "Validate and Plan",
-        "text": "plan.md"
-      },
-      {
-        "title": "Terraform Apply",
-        "text": "apply.md"
-      },
-      {
-        "title": "Inspect Infrastructure",
-        "text": "inspect.md"
-      },
-      {
-        "title": "State file",
-        "text": "statefile.md"
-      },
-      {
-        "title": "Graph",
-        "text": "graph.md"
-      },
-      {
-        "title": "Update Infrastructure",
-        "text": "update.md"
-      },
-      {
-        "title": "Destroy Infrastructure",
-        "text": "destroy.md"
-      },
-      {
-        "title": "Modules",
-        "text": "modules.md"
-      },
-      {
-        "title": "Quiz",
-        "text": "quiz.md"
+        "title": "Step 2",
+        "text": "step2.md"
       }
+
     ],
-    "assets": {
-        "host01": [
-            {"file": "index.html", "target": "/home/scrapbook/tutorial/www/", "chmod": "+r"}
-        ]
-    },
     "intro": {
-      "text": "intro.md",
-      "courseData": "background.sh"
+      "text": "intro.md"
     },
     "finish": {
       "text": "finish.md"
     }
   },
-  "files": [
-    "nginx/main.tf", "nginx/variables.tf", "nginx/dev.tfvars"
-  ],
   "environment": {
-    "uilayout": "editor-terminal",
-    "showdashboard": true,
-    "dashboards": [{"name": "nginx32768", "port": 32768},
-      {"name": "nginx", "href": "https://[[HOST_SUBDOMAIN]]-32768-[[KATACODA_HOST]].environments.katacoda.com"}]
+    "uilayout": "terminal-terminal"
   },
   "backend": {
-    "imageid": "ubuntu",
-    "port": 32768
+    "imageid": "kubernetes-cluster"
   }
 }
