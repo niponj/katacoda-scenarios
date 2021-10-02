@@ -1,0 +1,43 @@
+{
+  "title": "Kubernetes Playground",
+  "description": "You can break things here!!",
+  "difficulty": "Beginner",
+  "time": "40 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Information",
+        "text": "step1.md",
+        "background": "step1-background.sh",
+        "foreground": "step1-foreground.sh",
+        "verify": "step1-verify.sh"
+      },
+      {
+        "title": "Information",
+        "text": "step2.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {
+          "file": "k8s-install-1.20.sh",
+          "target": "/usr/bin/",
+          "chmod": "+x"
+        },
+        {
+          "file": "upgrade.sh",
+          "target": "/usr/bin/",
+          "chmod": "+x"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "hideintro": true,
+    "hidefinish": true
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster:1.18"
+  }
+}
