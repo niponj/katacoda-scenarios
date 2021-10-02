@@ -1,1 +1,1 @@
-Update SSH node01 command to include PGP error fixs
+Update SSH node01 commands to include PGP error fixs
