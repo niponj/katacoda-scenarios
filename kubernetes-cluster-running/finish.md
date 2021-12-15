@@ -7,6 +7,6 @@ For example:
   "uilayout": "terminal"
 },
 "backend": {
-  "imageid": "kubernetes-cluster-running:1.20"
+  "imageid": "kubernetes-cluster-running:1.19"
 }
 </pre>
