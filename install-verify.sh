@@ -1,1 +1,0 @@
-terraform version && echo "done"
