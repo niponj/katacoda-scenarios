@@ -10,7 +10,7 @@ There is a simple `curl` oneliner to install k3s. For demo purposes, we are pre-
 
 `curl -sfL https://get.k3s.io | K3S_CLUSTER_SECRET=thisisverysecret sh -`{{execute HOST1}}
 
-First, update the KUBECONFIG to the environment so kubeconfig command work well and fast
+First, update the KUBECONFIG to the environment so kubeconfig command works well and fast
 
 `export KUBECONFIG=/etc/rancher/k3s/k3s.yaml && alias k='kubectl'`{{execute HOST1}}
 
