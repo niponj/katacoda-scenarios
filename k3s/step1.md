@@ -10,9 +10,14 @@ There is a simple `curl` oneliner to install k3s. For demo purposes, we are pre-
 
 `curl -sfL https://get.k3s.io | K3S_CLUSTER_SECRET=thisisverysecret sh -`{{execute HOST1}}
 
+First, update the KUBECONFIG to the environment so kubeconfig command work well and fast
+
+`export KUBECONFIG=/etc/rancher/k3s/k3s.yaml && alias k='kubectl'`{{execute HOST1}}
+
+
 You can run the following command to check if the node is in Ready state (you might need to run the command a couple of times, can take up to 30 seconds for the node to register):
 
-`k3s kubectl get node`{{execute HOST1}}
+`kubectl get node`{{execute HOST1}}
 
 For your convenience, the following command will wait until the node shows up as `Ready`:
 
